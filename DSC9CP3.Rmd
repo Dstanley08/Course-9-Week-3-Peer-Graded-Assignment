@@ -1,0 +1,33 @@
+---
+title: "Course Project Week 3"
+author: "David Stanley"
+date: "January 19, 2020"
+output:
+  slidy_presentation: default
+  ioslides_presentation: default
+  beamer_presentation: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+data("mtcars")
+library(plotly)
+library(htmlwidgets)
+```
+
+
+## Week 3 Assignment
+
+- David Stanley
+- January 19,2020
+- Course Project Week #3
+
+
+## Slide with Plot
+
+```{r}
+plot_ly(mtcars,x=~disp,y=~hp,type="scatter",mode='markers',color=~factor(cyl))
+```
+
+## Thanks!
+
